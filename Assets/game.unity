@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 368245440}
   - component: {fileID: 368245439}
   - component: {fileID: 368245438}
+  - component: {fileID: 368245442}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -190,6 +191,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!114 &368245442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 368245437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cffe71f7a259b14aa0bf5e43ea39e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &463985880
 Prefab:
   m_ObjectHideFlags: 0
@@ -409,6 +421,10 @@ Prefab:
       propertyPath: laserColor.b
       value: 0.2965517
       objectReference: {fileID: 0}
+    - target: {fileID: 573655681, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
+      propertyPath: maxLaserDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
   m_IsPrefabParent: 0
@@ -551,6 +567,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1811292958, guid: 5ca80f4596fa44b87912a0592346d260, type: 2}
+      propertyPath: useAccelerometer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ca80f4596fa44b87912a0592346d260, type: 2}
   m_IsPrefabParent: 0
@@ -608,6 +628,7 @@ GameObject:
   - component: {fileID: 1464608677}
   - component: {fileID: 1464608676}
   - component: {fileID: 1464608675}
+  - component: {fileID: 1464608680}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -685,6 +706,21 @@ Transform:
   m_Father: {fileID: 732370182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1464608680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464608674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastMode: 0
+  raycasterEventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &1948748038
 Prefab:
   m_ObjectHideFlags: 0
